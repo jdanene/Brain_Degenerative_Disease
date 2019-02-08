@@ -1,5 +1,8 @@
 # Brain_Degenerative_Disease
 
+#### Traumatic Brain Injury: https://www.ncbi.nlm.nih.gov/gds/?term=traumatic+brain+AND+affymetrix
+
+
 The midterm project report is a proposal of your term project. Specific requirements for the midterm project report may include:
 - All team members should participate in discussion and contribute in the report. One team should not have more than 3 members. Students can choose to work independently without forming a team.
 - Report should not exceed three pages, double spaced.
