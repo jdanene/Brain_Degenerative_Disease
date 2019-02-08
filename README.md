@@ -4,6 +4,7 @@
 - Possibly do co-expression network?  
 - Possibly do methylation? 
 - Traumatic Brain Datasets: https://www.ncbi.nlm.nih.gov/gds/?term=traumatic+brain+AND+affymetrix
+    - https://www.ncbi.nlm.nih.gov/gds/?term=traumatic+brain
 
 
 # Project Parameters 
