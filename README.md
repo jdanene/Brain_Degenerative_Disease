@@ -1,6 +1,9 @@
 # Brain_Degenerative_Disease
 
-#### Traumatic Brain Injury: https://www.ncbi.nlm.nih.gov/gds/?term=traumatic+brain+AND+affymetrix
+# alzheimer's
+- Possibly do co-expression network?  
+- Possibly do methylation? 
+- Traumatic Brain Datasets: https://www.ncbi.nlm.nih.gov/gds/?term=traumatic+brain+AND+affymetrix
 
 
 The midterm project report is a proposal of your term project. Specific requirements for the midterm project report may include:
