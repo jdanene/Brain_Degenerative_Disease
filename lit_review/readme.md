@@ -1,8 +1,8 @@
 # Papers 
 - (paywall) `Bieniek2015_Article_ChronicTraumaticEncephalopathy.pdf`
-    - Name: "Chronic traumatic encephalopathy pathology in a neurodegenerative disorders brain bank"
-    - Info: (KF Bieniek et al. 2016), Number of Citations: 119
-    - Reason: Highly cited relative to google scholar search for "Alzheimer" AND "Chronic traumatic encephalopathy" AND "gene" AND "expression"
+    - `Name`: "Chronic traumatic encephalopathy pathology in a neurodegenerative disorders brain bank"
+    - `Info`: (KF Bieniek et al. 2016), Number of Citations: 119
+    - `Reason`: Highly cited relative to google scholar search for "Alzheimer" AND "Chronic traumatic encephalopathy" AND "gene" AND "expression"
 
 # Current Proposal 
 Compare gene enrichment and expression in samples belonging to mice afflicted with two different, but related conditions: CTE and Alzheimer's Disease. Both involve Tau proteins and likely others as well. Compare microarray data on mice with CTE under brain trauma conditions after 24hrrs, 48hrs, etc, and also early and late stage alzheimer's disease mice. Essentially, we are looking to compare and hopefully elucidate new information on the diseases by comparing relevant microarray data. 
