@@ -1,5 +1,5 @@
 # Papers 
-- (paywall) 
+- (paywall) `Bieniek2015_Article_ChronicTraumaticEncephalopathy.pdf`
     - Name: "Chronic traumatic encephalopathy pathology in a neurodegenerative disorders brain bank"
     - Info: (KF Bieniek et al. 2016), Number of Citations: 119
     - Reason: Highly cited relative to google scholar search for "Alzheimer" AND "Chronic traumatic encephalopathy" AND "gene" AND "expression"
