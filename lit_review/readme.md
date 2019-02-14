@@ -3,13 +3,20 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE9990 alzheimer’s
 https://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2851 
 
 #### Sources of experimental data. 
-
+Functional grouping analysis
 
 
 #### 
-Quantify the similarity of the mechanisms underlying brain damage after traumatic injury, to the mechanisms underlying  cognitive decline during aging. 
+Quantify the similarity of the mechanisms underlying brain damage after traumatic injury, to the mechanisms underlying  cognitive decline during aging. Find groups of genes that share similar expression patterns over the two conditions. Find common tedency for genes to share common roles in celluar processes. Since it is a time series we can also analyis gene co-expression patterns. Find observed coregulation at the level of cellular function. BY focusing on mice relationshio among the functions of genes in clustors will be more complete the the functional annotation of guman gene sequences, so we have an advatage in terms of interpreting our findings. In our cluster analysis we expect to find that the clusters of functionally related genes are maintaned, bbut we aim to expand our analysis with the addition of the expected uncharateized genes, with the goal of making at least provisional attribution of function on a genomic scale.  
 
+Genes that are expressed togther share common functions. Gial gene expression patterns suffice to separate genes into functional categories of the two conditions
 
+Map back to the available functional information on the genes studied
+
+### Sources of Experimental Data
+Data analyzed in were collected on spotted DNA microarrays. The
+
+Analysis of brain at various time points up to 21 days following lateral fluid percussion-induced brain injury. Delayed cell death following trauma results in brain damage. Results provide insight into the mechanisms underlying brain damage after traumatic injury, 
 
 ------------------------------------------------
 **[?1]** Natale JE, Ahmed F, Cernak I, Stoica B et al. Gene expression profile changes are commonly modulated across models and species after traumatic brain injury. J Neurotrauma 2003 Oct;20(10):907-27. PMID: 14588109 **[?2]** 	Kadish I, Thibault O, Blalock EM, Chen KC et al. Hippocampal and cognitive aging across the lifespan: a bioenergetic shift precedes and increased cholesterol trafficking parallels memory impairment. J Neurosci 2009 Feb 11;29(6):1805-16. PMID: 19211887
