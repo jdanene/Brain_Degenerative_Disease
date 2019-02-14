@@ -12,7 +12,7 @@ Quantify the similarity of the mechanisms underlying brain damage after traumati
 
 
 ------------------------------------------------
-**[?1]**Natale JE, Ahmed F, Cernak I, Stoica B et al. Gene expression profile changes are commonly modulated across models and species after traumatic brain injury. J Neurotrauma 2003 Oct;20(10):907-27. PMID: 14588109 **[?2]** 	Kadish I, Thibault O, Blalock EM, Chen KC et al. Hippocampal and cognitive aging across the lifespan: a bioenergetic shift precedes and increased cholesterol trafficking parallels memory impairment. J Neurosci 2009 Feb 11;29(6):1805-16. PMID: 19211887
+**[?1]** Natale JE, Ahmed F, Cernak I, Stoica B et al. Gene expression profile changes are commonly modulated across models and species after traumatic brain injury. J Neurotrauma 2003 Oct;20(10):907-27. PMID: 14588109 **[?2]** 	Kadish I, Thibault O, Blalock EM, Chen KC et al. Hippocampal and cognitive aging across the lifespan: a bioenergetic shift precedes and increased cholesterol trafficking parallels memory impairment. J Neurosci 2009 Feb 11;29(6):1805-16. PMID: 19211887
 
 
 # Papers 
