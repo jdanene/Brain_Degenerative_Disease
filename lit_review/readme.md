@@ -22,7 +22,21 @@ Expand on findings by using analytical techniques in deep learning to find signi
 
 Hypothesis that common changes acrpss pathobiologically different models of brain trauma and age-related neurodegneration may help identify the more importnat sec
 
+- Alterations in multiple molecular processes develop in the brain during aging or Alzheimer's disease(AD), some of which correlate with cognitive impairment. See if ageing-dependent upregulated processes coinscide w/ brain-trauma induced  processes. Since many of these aging-sensitive genes/processes are correlate with cognitive dyfunction. Link the key early events in cognitive dysfunction. Study attempts to identify the earliest detectable aging changes in expression, and study the changes that develop concurrently w/ the onset og cognitive impariment. We may not be able to establish cause and effect, but my matching with our traumatic brain injury model, we may be able to separate detrumanl from compensatory effects, further more we may be bale to generate unuqie inseiys on the processes that are shared by brain and cofnitve aging and braain trauma,
+
+
 ### Sources of Experimental Data
+We leverage two sets of Microarray data , a single time course over two different brain injury model (fluid percussion vs controlled cortical) in rats [?1], and hippocampal gene/protien expression and cognitive function in rats across the adult lifespan [?2]. 
+
+Speed of changes equivilant to those seen in aging over a lifespan. 
+from experiments on rat
+
+Can we use what we learned to predict performance on the water maze test? 
+
+Analyze temporal gene expression patterns for brain injury model, see if these patterns match gene-expression patterns for the micr going through cognitive decline. If so, then 
+
+
+
 Data analyzed in were collected on spotted DNA microarrays. The
 
 Analysis of brain at various time points up to 21 days following lateral fluid percussion-induced brain injury. Delayed cell death following trauma results in brain damage. Results provide insight into the mechanisms underlying brain damage after traumatic injury, 
