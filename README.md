@@ -1,28 +1,18 @@
-# Brain_Degenerative_Disease
+# Executive Summary
+Neurodegenerative diseases can be very devastating. However, not much is known about the disease mechanisms, and there is a dearth of effective treatments. A relatively new neurodegenerative disease, chronic traumatic encephalopathy (CTE), has recently been linked to both football and Alzheimer’s disease (AD).[1] Playing football is a risk factor for both CTE and AD due to the repetitive head trauma that is characteristic of the sport.[2] CTE and AD share a controversial relationship, but some evidence indicates that CTE may promote the development of AD. Post-mortem biopsies of both AD  and CTE patients share some key pathological features, such as the overexpression of hyperphosphorylated tau protein.[3] Tau protein has not been proven to cause either disease, but additional shared pathological features that may be important in identifying a relationship. 
+Significance. Determining the shared features of CTE and AD  is important for a number of reasons. First, identifying shared features, such as gene expression patterns, may be useful for defining mechanisms and pathological effects. The determination of disease mechanism would yield new drug targets--and currently there are no effective treatments for either AD or CTE.[1,4] Second, identifying disparate features in those same expression patterns could help distinguish between the two diseases. Currently, clinical presentation of the two diseases is very similar, and only medical history helps decide which is the more likely cause. As treatments improve, it is imperative to have an accurate diagnosis so the chosen treatment is as effective as it can be. 
+Specific aims. In order to further understand the relationship between CTE and AD, we propose analyzing and comparing two sets of gene expression microarray data. One profiles a time course of traumatic brain injury, the other explores a time course of cognitive decline similar to AD.[5,6] Specific aims include: 
+- Determine significant differences in gene expression between conditions in each model 
+- Quantify the similarity between significant gene expression data in these two models by using pathway analyses 
 
-### alzheimer's
-- Possibly do co-expression network?  
-- Possibly do methylation? 
-- Traumatic Brain Datasets: https://www.ncbi.nlm.nih.gov/gds/?term=traumatic+brain+AND+affymetrix
-    - https://www.ncbi.nlm.nih.gov/gds/?term=traumatic+brain
-
-
-# Project Parameters 
-The midterm project report is a proposal of your term project. Specific requirements for the midterm project report may include:
-- All team members should participate in discussion and contribute in the report. One team should not have more than 3 members. Students can choose to work independently without forming a team.
-- Report should not exceed three pages, double spaced.
-- Report should briefly describe the topic and its significance in biomedical research. Literature should be surveyed and some key references should be cited and appended (not count towards the three page limit) in a format of formal publications.
-- Specific aims should be proposed. Aims define what goals you plan to achieve in the project and may vary from project to project. However each project must contain one component, that is to write codes to analyze at least one type of high throughput bioinformatic data.
-
-## List of Potential Projects
-
-1.    Exon array in gene expression profiling http://www.affymetrix.com/estore/esearch/search.jsp?Ntt=exon+array&basic=1
-2.    Microarray for copy number variation       http://www.nature.com/ng/journal/v39/n7s/abs/ng2028.html
-3.    Microarray for SNP-typing       http://www.affymetrix.com/catalog/131533/AFFY/Genome-Wide-Human-SNP-Array-6.0#1_1
-4.    Microarray for DNA methylation http://nar.oxfordjournals.org/content/34/2/528.long
-5.    DNA methylation by bisulfite sequencing http://www.nature.com/nature/journal/v452/n7184/full/nature06745.html
-6.    Epigenetics-- Histone methylation profiling       http://www.nature.com/nrg/journal/v13/n5/full/nrg3173.html
-7.    Gene co-expression network https://www.ncbi.nlm.nih.gov/pubmed/16646834
-8.    Network-based tumor stratification genetic mutations http://www.nature.com/nmeth/journal/v10/n11/pdf/nmeth.2651.pdf
-9.    Gene set enrichment analysis based on gene expression http://www.pnas.org/content/102/43/15545.full
-10.  Single-cell RNA-seq analysis https://www.nature.com/articles/s12276-018-0071-8
+# Background
+## Alzheimer’s disease. 
+AD is the most common cause of dementia in the U.S. and leads is the 6th greatest cause of death in the U.S.[7] The disease is characterized by the accumulation of amyloid proteins as well as tau tangles in neurons. Amyloid beta oligomers (ABOs) are widely believed to be the primary cause of AD. AD is instigated by a large accumulation of ABOs which then start to selectively bind to neurons.[8] Once bound, ABOs initiate a host of cellular signal cascades that lead to neuron cell death. The microtubule binding protein known as tau, becomes abnormally phosphorylated in AD, which causes it to form aggregates within neuron cells. Tau tangles, as these aggregates are called, are believed to be a main cause of cell death and are correlated with ABO binding to neuron cells.[9] As AD progresses, more neurons progressively die, leading to dementia and death.
+## CTE. 
+CTE is a neurodegenerative disorder associated with repetitive traumatic brain injury.[1] The symptoms are similar to those of other neurodegenerative diseases, and include impairment of memory, motor function, decision making, and behavioral changes, but may also include mental health changes, including suicide.[1,4] While the pathology of CTE is still unknown, it is thought to be caused by repetitive head trauma, and is associated with athletes that play contact sports such as football or boxing.[4] There is currently no treatment or diagnostic for CTE, and prevention efforts are focused on preventing concussion by wearing helmets. Post-mortem biopsies have revealed that CTE is associated with reduced gray matter in the frontal and temporal lobes, as well as an anti-tau immune response, including neurofibrillary tangles, neuropil threads, dot-like grains, and astrocytic tangles.[1] 
+# Proposed Methods 
+## Sources and methods. 
+We will leverage two sets of microarray data, hippocampal gene expression changes across different brain injury models (fluid percussion vs controlled cortical) in rats,[6] and hippocampal gene/protein expression and cognitive function in rats across the adult lifespan.[5] The rat brain injury data set is produced from Affymetrix Rat Genome U34 Array, and the rat lifespan dataset is produced from Affymetrix Rat Expression 230A Array. The difference in technology could present us with some confounding technical problems and we are investigating whether this will be an issue or not. Other than the differences between the Affymetrix microarray chips we don't see any problems with inter-array variability since both sets of data use in situ oligonucleotide microarrays technology.
+Our goal is to quantify the similarity between the molecular mechanisms that underlying brain damage after traumatic injury to the mechanisms that underlie cognitive decline during the natural process of aging. To this end, we will perform a pathway analyses, also called a gene-set analysis (GSA), to identify sets of genes that are jointly associated, with the aim of gaining a comprehensive representation of the state of the brain cell throughout its response to brain trauma and the aging process. There are multiple analytical methods available to accomplish this goal, but we are currently undetermined about our method of analysis. As observed from network-based studies,[11,12,13] brain gene expression is organized into modules of distinct functional categories, and so we are considering gene co-expression network analysis similar to Zhang and Horvath (2005).[13] We are also considering more advanced techniques such as using artificial neural networks, and in particular we are interested in the co-expression and network method developed by Narayanan et al (2004).[14] Finally, we are considering the classical cluster analysis method first introduced by Eisen et al (1998).[3]
+## Conclusion
+Since rat gene sequences have a more complete functional annotation than human gene sequences, we are at an advantage in terms of giving functional meaning to our findings. We aim to expand our analysis with the addition of the expected uncharacterized genes, with the goal of making at least provisional attribution of function on a genomic scale. By relating mechanisms of age-related cognitive decline and traumatic brain, we may be able to separate detrimental from compensatory effects in gene expression aging changes, and also link key early events in cognitive dysfunction. Furthermore, we may be able to generate unique insights and testable hypotheses on the underlying processes that drive neurodegeneration.
