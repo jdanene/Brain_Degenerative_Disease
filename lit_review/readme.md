@@ -22,13 +22,17 @@ Expand on findings by using analytical techniques in deep learning to find signi
 
 Hypothesis that common changes acrpss pathobiologically different models of brain trauma and age-related neurodegneration may help identify the more importnat sec
 
-- Alterations in multiple molecular processes develop in the brain during aging or Alzheimer's disease(AD), some of which correlate with cognitive impairment. See if ageing-dependent upregulated processes coinscide w/ brain-trauma induced  processes. Since many of these aging-sensitive genes/processes are correlate with cognitive dyfunction. Link the key early events in cognitive dysfunction. Study attempts to identify the earliest detectable aging changes in expression, and study the changes that develop concurrently w/ the onset og cognitive impariment. We may not be able to establish cause and effect, but my matching with our traumatic brain injury model, we may be able to separate detrumanl from compensatory effects, further more we may be bale to generate unuqie inseiys on the processes that are shared by brain and cofnitve aging and braain trauma,
+- Alterations in multiple molecular processes develop in the brain during aging or Alzheimer's disease(AD), some of which correlate with cognitive impairment. See if ageing-dependent upregulated processes coinscide w/ brain-trauma induced  processes. Since many of these aging-sensitive genes/processes are correlate with cognitive dyfunction. Link the key early events in cognitive dysfunction. Study attempts to identify the earliest detectable aging changes in expression, and study the changes that develop concurrently w/ the onset og cognitive impariment. By matching the two , we may be able to separate detrimental from compensatory effects, further more we may be bale to generate unuqie inseiys on the processes that are shared by brain and cofnitve aging and braain trauma,
 
 ### Sources of Experimental Data
-We leverage two sets of Microarray data , gene expression changes across different brain injury models (fluid percussion vs controlled cortical) in rats [?1], and hippocampal gene/protien expression and cognitive function in rats across the adult lifespan [?2]. Our goal is to quantify the similarity of the mechanisms underlying brain damage after traumatic injury, to the mechanisms underlying cognitive decline during aging. To this end, perform a pathway analyses, also called a gene-set analyses (GSA), to identify sets of genes that are jointly associated. Honing our focus on testing the cumulative effect of multiple single nucleotide polymorphism (SNPs) in our two datasets. The current method of analyis for this step is undertermined but we are currently considering cluster analyis [?3], gene co-expression network analyis. As observed from network based studies Since brain gene expression is organized into modules of distinct functional categories. 
+We leverage two sets of Microarray data , gene expression changes across different brain injury models (fluid percussion vs controlled cortical) in rats [?1], and hippocampal gene/protien expression and cognitive function in rats across the adult lifespan [?2]. Our goal is to quantify the similarity of the mechanisms underlying brain damage after traumatic injury, to the mechanisms underlying cognitive decline during aging, with the emphasis on idenifying the similarities between early anging changes in gene expression to accelerated changes in cognitive decline due to brain trauma. 
 
-(Chen et al.,
-2008; Emilsson et al., 2008; Zhang and Horvath, 2005)
+By matching relating mechanisms of age related cognitive decline and traumatic brain, we may be able to separate detrimental from compensatory effects in early or concurrent gene expression aging changes in rats, furthermore we may be able to generate unique insights and testable hypotheses on the underlying processes that drive cognitive decline. Since rat gene sequences have a more complete functional annotation than human gene sequences, we are at an advantage in terms of giving functional meaning to our findings. 
+
+To this end, perform a pathway analyses, also called a gene-set analyses (GSA), to identify sets of genes that are jointly associated. Honing our focus on testing the cumulative effect of multiple single nucleotide polymorphism (SNPs) in our two datasets. The current method of analyis for this step is undertermined but we are currently considering cluster analyis [?3], gene co-expression network analyis. As observed from network based studies [?4], [?5], [?6] brain gene expression is organized into modules of
+distinct functional categories, and so we are also considering gene co-expression network analyis similar to Zhang, B., and Horvath, S. (2005). 
+
+
 
 In order to identify common gene expression changes across the different injury models and the adult rats lifespan. Our goal is to see 
 
@@ -62,20 +66,6 @@ We conclude that although NES and SD exert similar transcriptional changes, sele
 
 # Current Proposal 
 Compare gene enrichment and expression in samples belonging to mice afflicted with two different, but related conditions: CTE and Alzheimer's Disease. Both involve Tau proteins and likely others as well. Compare microarray data on mice with CTE under brain trauma conditions after 24hrrs, 48hrs, etc, and also early and late stage alzheimer's disease mice. Essentially, we are looking to compare and hopefully elucidate new information on the diseases by comparing relevant microarray data. 
-
-# Outline
-### Introduction
- - Connection between miliary and football I like this [link]( https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-018-0619-9) nice intro that catches the readers attention about CTE. Need to find a similar example for alzheimer’s. 
- - neurodegenerative diseases all seem to be link <how>, brief cite some studies
- - Cite Research that talks about the link between CTE and Alzheimer. 
-### Goal
-  - The main reason for our study. 
-      - Is it because CTE only diagnosed by analyzing a dead brain and if we can find some genetic markers that are similar betwwen a related disease, we can do some molecular profiling for early diagnosis. 
-      - Is it to look at how Alzheimer's disease is treated early, see if similar mechanism for treating Alzheimer early can be used for CTE. Ealry diagnosis of CTE may not a issue since we can be reasonably sure that with repeated blows a player has a high chance of CTE, so why do we care about early diagnosis. 
- >> American football players, 99% of former National Football League (NFL) players were neuropathologically diagnosed with CTE at autopsy. Although the frequency of CTE in individuals with less football exposure was substantial, it was nonetheless lower (highest level of play - college: 91%; highest level of play – high school: 21%
-
-### Analysis
- - Derived from our goal. Get more techincal and describe how we aim to achive our goal. Similar to what Will suggested in his `Specific aim` section. 
 
 
 # Blank
