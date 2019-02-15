@@ -15,6 +15,13 @@ Genes that are expressed togther share common functions. Gial gene expression pa
 
 Map back to the available functional information on the genes studied
 
+Traumatic brain injuty induces a cascade of biochemical responses, both nuerotxxic and neuroprotective substantially determine subseq tissue loss and associated functional deficits. 
+Molecular mechanisms underlying delayed response to traumatic brain injury not fully understood. 
+
+Expand on findings by using analytical techniques in deep learning to find significant expressision groups of genes and map them back to functional categories. 
+
+Hypothesis that common changes acrpss pathobiologically different models of brain trauma and age-related neurodegneration may help identify the more importnat sec
+
 ### Sources of Experimental Data
 Data analyzed in were collected on spotted DNA microarrays. The
 
@@ -29,6 +36,8 @@ Analysis of brain at various time points up to 21 days following lateral fluid p
     - `Name`: "Chronic traumatic encephalopathy pathology in a neurodegenerative disorders brain bank"
     - `Info`: (KF Bieniek et al. 2016), Number of Citations: 119
     - `Reason`: Highly cited relative to google scholar search for "Alzheimer" AND "Chronic traumatic encephalopathy" AND "gene" AND "expression"
+# Concusion
+We conclude that although NES and SD exert similar transcriptional changes, selective presynaptic release machinery and Homer1 expression changes are seen in SD. Among other changes, the marked decrease in Homer1 expression with age may represent an important divergence between young and aged brain response to SD. Based on this, it seems reasonable to conclude that therapeutic strategies designed to promote sleep in young subjects may have off-target effects in the aged. Finally, this work identifies presynaptic vesicular release and intercellular adhesion molecular signatures as novel therapeutic targets to counter effects of SD in young subjects.
 
 # Current Proposal 
 Compare gene enrichment and expression in samples belonging to mice afflicted with two different, but related conditions: CTE and Alzheimer's Disease. Both involve Tau proteins and likely others as well. Compare microarray data on mice with CTE under brain trauma conditions after 24hrrs, 48hrs, etc, and also early and late stage alzheimer's disease mice. Essentially, we are looking to compare and hopefully elucidate new information on the diseases by comparing relevant microarray data. 
