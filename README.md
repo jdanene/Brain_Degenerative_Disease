@@ -39,3 +39,9 @@ Since rat gene sequences have a more complete functional annotation than human g
 11. Chen, Y., Zhu, J., Lum, P. Y., Yang, X., Pinto, S., MacNeil, D. J., … Schadt, E. E. (2008). Variations in DNA elucidate molecular networks that cause disease. Nature, 452(7186), 429–435. https://doi.org/10.1038/nature06757
 
 12. Emilsson, V., Thorleifsson, G., Zhang, B., Leonardson, A. S., Zink, F., Zhu, J., … Stefansson, K. (2008). Genetics of gene expression and its effect on disease. Nature, 452(7186), 423–428. https://doi.org/10.1038/nature06758
+
+13. Zhang, B., & Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Statistical Applications in Genetics and Molecular Biology, 4, Article17. https://doi.org/10.2202/1544-6115.1128
+
+14. Narayanan, A., Keedwell, E. C., Gamalielsson, J., & Tatineni, S. (2004). Single-layer artificial neural networks for gene expression analysis. Neurocomputing, 61, 217–240. https://doi.org/10.1016/J.NEUCOM.2003.10.017
+
+
