@@ -7,7 +7,7 @@ Functional grouping analysis
 
 
 #### 
-Quantify the similarity of the mechanisms underlying brain damage after traumatic injury, to the mechanisms underlying  cognitive decline during aging. Find groups of genes that share similar expression patterns over the two conditions. Find common tedency for genes to share common roles in celluar processes. Since it is a time series we can also analyis gene co-expression patterns. Find observed coregulation at the level of cellular function. BY focusing on mice relationshio among the functions of genes in clustors will be more complete the the functional annotation of guman gene sequences, so we have an advatage in terms of interpreting our findings. In our cluster analysis we expect to find that the clusters of functionally related genes are maintaned, bbut we aim to expand our analysis with the addition of the expected uncharateized genes, with the goal of making at least provisional attribution of function on a genomic scale.  Are main goal is to glean a comprehensive representation of the state of the cell throughout it response to brain trauma, and through the cognitive decline, and see if the state evolution coinscide. If they do, then this suggest that their is a unified approach to treating neurodegenerative diseases. Not entirely sure of the m
+Find groups of genes that share similar expression patterns over the two conditions. Find common tedency for genes to share common roles in celluar processes. Since it is a time series we can also analyis gene co-expression patterns. Find observed coregulation at the level of cellular function. BY focusing on mice relationshio among the functions of genes in clustors will be more complete the the functional annotation of guman gene sequences, so we have an advatage in terms of interpreting our findings. In our cluster analysis we expect to find that the clusters of functionally related genes are maintaned, bbut we aim to expand our analysis with the addition of the expected uncharateized genes, with the goal of making at least provisional attribution of function on a genomic scale.  Are main goal is to glean a comprehensive representation of the state of the cell throughout it response to brain trauma, and through the cognitive decline, and see if the state evolution coinscide. If they do, then this suggest that their is a unified approach to treating neurodegenerative diseases. Not entirely sure of the m
 
 gene expression profiling is the measurement of the activity (the expression) of thousands of genes at once, to create a global picture of cellular function. These profiles can, for example, distinguish between cells that are actively dividing, or show how the cells react to a particular treatment. Many experiments of this sort measure an entire genome simultaneously, that is, every gene present in a particular cell.
 
@@ -24,16 +24,22 @@ Hypothesis that common changes acrpss pathobiologically different models of brai
 
 - Alterations in multiple molecular processes develop in the brain during aging or Alzheimer's disease(AD), some of which correlate with cognitive impairment. See if ageing-dependent upregulated processes coinscide w/ brain-trauma induced  processes. Since many of these aging-sensitive genes/processes are correlate with cognitive dyfunction. Link the key early events in cognitive dysfunction. Study attempts to identify the earliest detectable aging changes in expression, and study the changes that develop concurrently w/ the onset og cognitive impariment. We may not be able to establish cause and effect, but my matching with our traumatic brain injury model, we may be able to separate detrumanl from compensatory effects, further more we may be bale to generate unuqie inseiys on the processes that are shared by brain and cofnitve aging and braain trauma,
 
-
 ### Sources of Experimental Data
-We leverage two sets of Microarray data , a single time course over two different brain injury model (fluid percussion vs controlled cortical) in rats [?1], and hippocampal gene/protien expression and cognitive function in rats across the adult lifespan [?2]. 
+We leverage two sets of Microarray data , gene expression changes across different brain injury models (fluid percussion vs controlled cortical) in rats [?1], and hippocampal gene/protien expression and cognitive function in rats across the adult lifespan [?2]. Our goal is to quantify the similarity of the mechanisms underlying brain damage after traumatic injury, to the mechanisms underlying cognitive decline during aging. To this end, perform a pathway analyses, also called a gene-set analyses (GSA), to identify sets of genes that are jointly associated. Honing our focus on testing the cumulative effect of multiple single nucleotide polymorphism (SNPs) in our two datasets. The current method of analyis for this step is undertermined but we are currently considering cluster analyis [?3], gene co-expression network analyis. As observed from network based studies Since brain gene expression is organized into modules of distinct functional categories. 
+
+(Chen et al.,
+2008; Emilsson et al., 2008; Zhang and Horvath, 2005)
+
+In order to identify common gene expression changes across the different injury models and the adult rats lifespan. Our goal is to see 
+
+temporal gene expression patterns for brain injury model, see if these patterns match gene-expression patterns for the micr going through cognitive decline. 
 
 Speed of changes equivilant to those seen in aging over a lifespan. 
 from experiments on rat
 
 Can we use what we learned to predict performance on the water maze test? 
 
-Analyze temporal gene expression patterns for brain injury model, see if these patterns match gene-expression patterns for the micr going through cognitive decline. If so, then 
+If so, then 
 
 
 
@@ -42,7 +48,8 @@ Data analyzed in were collected on spotted DNA microarrays. The
 Analysis of brain at various time points up to 21 days following lateral fluid percussion-induced brain injury. Delayed cell death following trauma results in brain damage. Results provide insight into the mechanisms underlying brain damage after traumatic injury, 
 
 ------------------------------------------------
-**[?1]** Natale JE, Ahmed F, Cernak I, Stoica B et al. Gene expression profile changes are commonly modulated across models and species after traumatic brain injury. J Neurotrauma 2003 Oct;20(10):907-27. PMID: 14588109 **[?2]** 	Kadish I, Thibault O, Blalock EM, Chen KC et al. Hippocampal and cognitive aging across the lifespan: a bioenergetic shift precedes and increased cholesterol trafficking parallels memory impairment. J Neurosci 2009 Feb 11;29(6):1805-16. PMID: 19211887
+**[?1]** Natale JE, Ahmed F, Cernak I, Stoica B et al. Gene expression profile changes are commonly modulated across models and species after traumatic brain injury. J Neurotrauma 2003 Oct;20(10):907-27. PMID: 14588109 **[?2]** 	Kadish I, Thibault O, Blalock EM, Chen KC et al. Hippocampal and cognitive aging across the lifespan: a bioenergetic shift precedes and increased cholesterol trafficking parallels memory impairment. J Neurosci 2009 Feb 11;29(6):1805-16. PMID: 19211887 **[?3]** Eisen, M.B., Spellman, P.T., Brown, P.O., and Botstein, D. 1998. Cluster analysis and display of genome-wide expression patterns. Proc.Natl. Acad.Sci. 95: 14863–14868.**[?4]** Chen, Y., Zhu, J., Lum, P.Y., Yang, X., Pinto, S., MacNeil, D.J., Zhang, C., Lamb, J., Edwards, S., Sieberts, S.K., et al. (2008). Variations in DNA elucidate molecular networks that cause disease. Nature 452, 429–435. **[?5]** Emilsson, V., Thorleifsson, G., Zhang, B., Leonardson, A.S., Zink, F., Zhu, J., Carlson, S., Helgason, A., Walters, G.B., Gunnarsdottir, S., et al. (2008). Genetics of gene expression and its effect on disease. Nature 452, 423–428. **[?6]** Zhang, B., and Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Stat. Appl. Genet. Mol. Biol. 4, e17.
+
 
 
 # Papers 
