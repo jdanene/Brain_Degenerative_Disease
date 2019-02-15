@@ -16,3 +16,27 @@ We will leverage two sets of microarray data, hippocampal gene expression change
 Our goal is to quantify the similarity between the molecular mechanisms that underlying brain damage after traumatic injury to the mechanisms that underlie cognitive decline during the natural process of aging. To this end, we will perform a pathway analyses, also called a gene-set analysis (GSA), to identify sets of genes that are jointly associated, with the aim of gaining a comprehensive representation of the state of the brain cell throughout its response to brain trauma and the aging process. There are multiple analytical methods available to accomplish this goal, but we are currently undetermined about our method of analysis. As observed from network-based studies,[11,12,13] brain gene expression is organized into modules of distinct functional categories, and so we are considering gene co-expression network analysis similar to Zhang and Horvath (2005).[13] We are also considering more advanced techniques such as using artificial neural networks, and in particular we are interested in the co-expression and network method developed by Narayanan et al (2004).[14] Finally, we are considering the classical cluster analysis method first introduced by Eisen et al (1998).[3]
 ## Conclusion
 Since rat gene sequences have a more complete functional annotation than human gene sequences, we are at an advantage in terms of giving functional meaning to our findings. We aim to expand our analysis with the addition of the expected uncharacterized genes, with the goal of making at least provisional attribution of function on a genomic scale. By relating mechanisms of age-related cognitive decline and traumatic brain, we may be able to separate detrimental from compensatory effects in gene expression aging changes, and also link key early events in cognitive dysfunction. Furthermore, we may be able to generate unique insights and testable hypotheses on the underlying processes that drive neurodegeneration.
+# References 
+1. Armstrong, R. A., McKee, A. C., Stein, T. D., Alvarez, V. E., & Cairns, N. J. (2018). Cortical degeneration in chronic traumatic encephalopathy and Alzheimer’s disease neuropathologic change. Neurological Sciences, 1–5. https://doi.org/10.1007/s10072-018-3686-6
+
+2. Lehman, E. J., Hein, M. J., Baron, S. L., & Gersic, C. M. (2012). Neurodegenerative causes of death among retired National Football League players. Neurology, 79(19), 1970–4. https://doi.org/10.1212/WNL.0b013e31826daf50
+
+3. Woerman, A. L., Aoyagi, A., Patel, S., Kazmi, S. A., Lobach, I., Grinberg, L. T., … Prusiner, S. B. (2016). Tau prions from Alzheimer’s disease and chronic traumatic encephalopathy patients propagate in cultured cells. Proceedings of the National Academy of Sciences of the United States of America, 113(50), E8187–E8196. https://doi.org/10.1073/pnas.1616344113
+
+4. (2016). Chronic traumatic encephalopathy - Symptoms and causes - Mayo Clinic. Retrieved February 13, 2019, from https://www.mayoclinic.org/diseases-conditions/chronic-traumatic-encephalopathy/symptoms-causes/syc-20370921
+
+5. Kadish, I., Thibault, O., Blalock, E. M., Chen, K.-C., Gant, J. C., Porter, N. M., & Landfield, P. W. (2009). Hippocampal and Cognitive Aging across the Lifespan: A Bioenergetic Shift Precedes and Increased Cholesterol Trafficking Parallels Memory Impairment. Journal of Neuroscience, 29(6), 1805–1816. https://doi.org/10.1523/JNEUROSCI.4599-08.2009
+
+6. Natale, J. E., Ahmed, F., Cernak, I., Stoica, B., & Faden, A. I. (2003). Gene Expression Profile Changes Are Commonly Modulated across Models and Species after Traumatic Brain Injury. Journal of Neurotrauma, 20(10), 907–927. https://doi.org/10.1089/089771503770195777
+
+7. A. (2017, March 15). 2017 Alzheimer's disease facts and figures. Alzheimer's & Dementia, 13(4), 325-373. Retrieved from ScienceDirect.
+
+8. Cline, E. N., Bicca, M. A., Viola, K. L., & Klein, W. L. (2018). The Amyloid-β Oligomer Hypothesis: Beginning of the Third Decade. Journal of Alzheimers Disease,64(S1). doi:10.3233/jad-179941
+
+9. Johnson, G. V. (2004). Tau phosphorylation in neuronal cell function and dysfunction. Journal of Cell Science, 117(24), 5721-5729. doi:10.1242/jcs.01558
+
+10. Eisen, M. B., Spellman, P. T., Brown, P. O., & Botstein, D. (1998). Cluster analysis and display of genome-wide expression patterns. Proceedings of the National Academy of Sciences, 95(25).
+
+11. Chen, Y., Zhu, J., Lum, P. Y., Yang, X., Pinto, S., MacNeil, D. J., … Schadt, E. E. (2008). Variations in DNA elucidate molecular networks that cause disease. Nature, 452(7186), 429–435. https://doi.org/10.1038/nature06757
+
+12. Emilsson, V., Thorleifsson, G., Zhang, B., Leonardson, A. S., Zink, F., Zhu, J., … Stefansson, K. (2008). Genetics of gene expression and its effect on disease. Nature, 452(7186), 423–428. https://doi.org/10.1038/nature06758
