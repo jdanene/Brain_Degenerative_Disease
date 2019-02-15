@@ -27,12 +27,10 @@ Hypothesis that common changes acrpss pathobiologically different models of brai
 ### Sources of Experimental Data
 We leverage two sets of Microarray data , gene expression changes across different brain injury models (fluid percussion vs controlled cortical) in rats [?1], and hippocampal gene/protien expression and cognitive function in rats across the adult lifespan [?2]. Our goal is to quantify the similarity of the mechanisms underlying brain damage after traumatic injury, to the mechanisms underlying cognitive decline during aging, with the emphasis on idenifying the similarities between early anging changes in gene expression to accelerated changes in cognitive decline due to brain trauma. 
 
-By matching relating mechanisms of age related cognitive decline and traumatic brain, we may be able to separate detrimental from compensatory effects in early or concurrent gene expression aging changes in rats, furthermore we may be able to generate unique insights and testable hypotheses on the underlying processes that drive cognitive decline. Since rat gene sequences have a more complete functional annotation than human gene sequences, we are at an advantage in terms of giving functional meaning to our findings. 
-
 To this end, perform a pathway analyses, also called a gene-set analyses (GSA), to identify sets of genes that are jointly associated. Honing our focus on testing the cumulative effect of multiple single nucleotide polymorphism (SNPs) in our two datasets. The current method of analyis for this step is undertermined but we are currently considering cluster analyis [?3], gene co-expression network analyis. As observed from network based studies [?4], [?5], [?6] brain gene expression is organized into modules of
-distinct functional categories, and so we are also considering gene co-expression network analyis similar to Zhang, B., and Horvath, S. (2005). 
+distinct functional categories, and so we are also considering gene co-expression network analyis similar to Zhang, B., and Horvath, S. (2005). We are also considering more advanced techniques in deep learning, such as using convolutional neural networks for co-expression analysis 
 
-
+By matching relating mechanisms of age related cognitive decline and traumatic brain, we may be able to separate detrimental from compensatory effects in early or concurrent gene expression aging changes in rats, furthermore we may be able to generate unique insights and testable hypotheses on the underlying processes that drive cognitive decline. Since rat gene sequences have a more complete functional annotation than human gene sequences, we are at an advantage in terms of giving functional meaning to our findings. 
 
 In order to identify common gene expression changes across the different injury models and the adult rats lifespan. Our goal is to see 
 
