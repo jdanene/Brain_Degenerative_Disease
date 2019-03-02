@@ -1,8 +1,8 @@
 
 ### Current Papers of interest 
-- Using Bayesian Networks to Analyze Expression Data (Cited by > 3000)
+- `Using Bayesian Networks to Analyze Expression Data` (Cited by > 3000)
     - Doesn't deal with temporal data
-- Gene networks inference using dynamic Bayesian networks (cited by > 600)
+- `Gene networks inference using dynamic Bayesian networks` (cited by > 600)
     - Deals with temporal probably go with this. 
 
 ### Sources & Methods
