@@ -1,4 +1,7 @@
 
+### Connection Between AD and CTE
+- https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-018-0619-9
+
 ### Current Papers of interest 
 - `Using Bayesian Networks to Analyze Expression Data` (Cited by > 3000)
     - Doesn't deal with temporal data
