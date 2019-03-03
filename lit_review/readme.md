@@ -1,4 +1,10 @@
 
+### Current Papers of interest 
+- `Using Bayesian Networks to Analyze Expression Data` (Cited by > 3000)
+    - Doesn't deal with temporal data
+- `Gene networks inference using dynamic Bayesian networks` (cited by > 600)
+    - Deals with temporal probably go with this. 
+
 ### Sources & Methods
 We leverage two sets of Microarray data, hippocampal gene expression changes across different brain injury models (fluid percussion vs controlled cortical) in rats (?1), and hippocampal gene/protein expression and cognitive function in rats across the adult lifespan (?2). The rat brain injury data set is produced from Affymetrix Rat Genome U34 Array, and the rat lifespan dataset is produced from Affymetrix Rat Expression 230A Array. The difference in technology could present us with some confounding technical problems and we are investigating whether this will be an issue or not. Other than the differences between the Affymetrix microarray chips we don't see any problems with inter-array variability since both sets of data use in situ oligonucleotide microarrays technology. 
 
@@ -6,7 +12,6 @@ Our goal is to quantify the similarity between the molecular mechanisms that und
 
 ### Conclusion & Significance
 Since rat gene sequences have a more complete functional annotation than human gene sequences, we are at an advantage in terms of giving functional meaning to our findings. We aim to expand our analysis with the addition of the expected uncharacterized genes, with the goal of making at least provisional attribution of function on a genomic scale. By relating mechanisms of age-related cognitive decline and traumatic brain, we may be able to separate detrimental from compensatory effects in gene expression aging changes, and also link key early events in cognitive dysfunction. Furthermore, we may be able to generate unique insights and testable hypotheses on the underlying processes that drive neurodegeneration. <br>
-`I put what I could, but I think Will needs to add a sentence or two that connect Alzheimer’s & CTE`
 
 ------------------------------------------------
 **[?1]** Natale JE, Ahmed F, Cernak I, Stoica B et al. Gene expression profile changes are commonly modulated across models and species after traumatic brain injury. J Neurotrauma 2003 Oct;20(10):907-27. PMID: 14588109 **[?2]** 	Kadish I, Thibault O, Blalock EM, Chen KC et al. Hippocampal and cognitive aging across the lifespan: a bioenergetic shift precedes and increased cholesterol trafficking parallels memory impairment. J Neurosci 2009 Feb 11;29(6):1805-16. PMID: 19211887 **[?3]** Eisen, M.B., Spellman, P.T., Brown, P.O., and Botstein, D. 1998. Cluster analysis and display of genome-wide expression patterns. Proc.Natl. Acad.Sci. 95: 14863–14868.**[?4]** Chen, Y., Zhu, J., Lum, P.Y., Yang, X., Pinto, S., MacNeil, D.J., Zhang, C., Lamb, J., Edwards, S., Sieberts, S.K., et al. (2008). Variations in DNA elucidate molecular networks that cause disease. Nature 452, 429–435. **[?5]** Emilsson, V., Thorleifsson, G., Zhang, B., Leonardson, A.S., Zink, F., Zhu, J., Carlson, S., Helgason, A., Walters, G.B., Gunnarsdottir, S., et al. (2008). Genetics of gene expression and its effect on disease. Nature 452, 423–428. **[?6]** Zhang, B., and Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Stat. Appl. Genet. Mol. Biol. 4, e17.**[?7]** Narayanan A,  Keedwell EC,  Gamalielsson J, et al. Single-layer artificial neural networks for gene expression analysis, Neurocomputing , 2004, vol. 61 (pg. 217-40)
