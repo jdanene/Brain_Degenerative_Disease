@@ -1,16 +1,10 @@
-
-### Connection Between AD and CTE
-- https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-018-0619-9
-
 ### Current Papers of interest 
 - `Using Bayesian Networks to Analyze Expression Data` (Cited by > 3000)
     - Doesn't deal with temporal data
-- `Gene networks inference using dynamic Bayesian networks` (cited by > 600)
-    - Deals with temporal probably go with this. 
-
 ### Data
 - CTE: https://www.ncbi.nlm.nih.gov/pubmed/14588109
 - AH: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2661568/
+
 ### Sources & Methods
 We leverage two sets of Microarray data, hippocampal gene expression changes across different brain injury models (fluid percussion vs controlled cortical) in rats (?1), and hippocampal gene/protein expression and cognitive function in rats across the adult lifespan (?2). The rat brain injury data set is produced from Affymetrix Rat Genome U34 Array, and the rat lifespan dataset is produced from Affymetrix Rat Expression 230A Array. The difference in technology could present us with some confounding technical problems and we are investigating whether this will be an issue or not. Other than the differences between the Affymetrix microarray chips we don't see any problems with inter-array variability since both sets of data use in situ oligonucleotide microarrays technology. 
 
