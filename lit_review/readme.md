@@ -1,9 +1,10 @@
 ### Current Papers of interest 
 - `Using Bayesian Networks to Analyze Expression Data` (Cited by > 3000)
     - Doesn't deal with temporal data
+- https://cran.r-project.org/web/packages/bnstruct/vignettes/bnstruct.pdf
 ### Data
-- CTE: https://www.ncbi.nlm.nih.gov/pubmed/14588109
-- AH: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2661568/
+- CTE: PAPER: https://www.ncbi.nlm.nih.gov/pubmed/14588109 DATA: https://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2851
+- AH: PAPER: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2661568/ DATA: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE2392
 
 ### Sources & Methods
 We leverage two sets of Microarray data, hippocampal gene expression changes across different brain injury models (fluid percussion vs controlled cortical) in rats (?1), and hippocampal gene/protein expression and cognitive function in rats across the adult lifespan (?2). The rat brain injury data set is produced from Affymetrix Rat Genome U34 Array, and the rat lifespan dataset is produced from Affymetrix Rat Expression 230A Array. The difference in technology could present us with some confounding technical problems and we are investigating whether this will be an issue or not. Other than the differences between the Affymetrix microarray chips we don't see any problems with inter-array variability since both sets of data use in situ oligonucleotide microarrays technology. 
