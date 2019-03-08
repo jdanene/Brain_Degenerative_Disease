@@ -3,7 +3,7 @@
     - Doesn't deal with temporal data
 - https://cran.r-project.org/web/packages/bnstruct/vignettes/bnstruct.pdf
 ### Data
-- CTE: PAPER: https://www.ncbi.nlm.nih.gov/pubmed/14588109 DATA: https://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2851
+- CTE: PAPER:https://www.researchgate.net/profile/Ibolja_Cernak/publication/9032663_Gene_Expression_Profile_Changes_Are_Commonly_Modulated_across_Models_and_Species_after_Traumatic_Brain_Injury/links/09e415016e266e9c68000000/Gene-Expression-Profile-Changes-Are-Commonly-Modulated-across-Models-and-Species-after-Traumatic-Brain-Injury.pdf?origin=publication_detail   DATA: https://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2851
 - AH: PAPER: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2661568/ DATA: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE2392
 
 ### Sources & Methods
