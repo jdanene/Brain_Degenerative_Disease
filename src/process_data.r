@@ -168,46 +168,63 @@ alzheimer.dta<-exprs(ah.ExprDta)
 alzheimer.dta <- alzheimer.dta[ah.pma.Idx,] #filter for sig genes. 
 
 #Save data
-#write.table(alzheimer.dta, file = file.path(cleandata.dir,"alzheimer.txt"), sep = "\t", row.names = TRUE,col.names =TRUE)
+write.table(alzheimer.dta, file = file.path(cleandata.dir,"alzheimer.txt"), sep = "\t", row.names = TRUE,col.names =TRUE)
 
 cat(paste("Number of genes: ",length(ah.pma.Idx),"\n"))
 
-# precense call threshold
-THRESHOLD = .4
+get.ctedata<-function(THRESHOLD = .4){
+    # load Affymetrix data                                                         
+    pcraw.cte<- ReadAffy(filenames=fnames.cte,celfile.path=dir.cte)
+    pcraw.naive.cte<-ReadAffy(filenames=fnames.naive.cte,celfile.path=dir.cte)                                               
+    sampleNames(pcraw.cte) <-cte.colnames
+    sampleNames(pcraw.naive.cte) <-cte.naive.colnames
 
-# load Affymetrix data                                                         
-pcraw.cte<- ReadAffy(filenames=fnames.cte,celfile.path=dir.cte)
-pcraw.naive.cte<-ReadAffy(filenames=fnames.naive.cte,celfile.path=dir.cte)                                               
-sampleNames(pcraw.cte) <-cte.colnames
-sampleNames(pcraw.naive.cte) <-cte.naive.colnames
+    # subtract the means of naive 
+    pm(pcraw.cte)<-pm(pcraw.cte) - rowMeans(pm(pcraw.naive.cte)) 
+    mm(pcraw.cte)<-mm(pcraw.cte) - rowMeans(mm(pcraw.naive.cte)) 
 
-# subtract the means of naive 
-pm(pcraw.cte)<-pm(pcraw.cte) - rowMeans(pm(pcraw.naive.cte)) 
-mm(pcraw.cte)<-mm(pcraw.cte) - rowMeans(mm(pcraw.naive.cte)) 
+    # present, Absent, Marginal Intensity Measurment
+    cte.pma<- mas5calls(pcraw.cte)
+    cte.pma<- exprs(cte.pma) 
+    cte.pma = cte.pma == "P"#| cte.pma == "M" 
+    cte.pma = rowSums(cte.pma) 
+    cte.pma.Idx = which(cte.pma >= length(cte.colnames)*THRESHOLD) 
 
-# present, Absent, Marginal Intensity Measurment
-cte.pma<- mas5calls(pcraw.cte)
-cte.pma<- exprs(cte.pma) 
-cte.pma = cte.pma == "P"#| cte.pma == "M" 
-cte.pma = rowSums(cte.pma) 
-cte.pma.Idx = which(cte.pma >= length(cte.colnames)*THRESHOLD) 
+    # robust Micro Array Avg w/ Quantile Normalization and log scaling. 
+    cte.ExprDta <-rma(pcraw.cte)
+    cte.dta<-exprs(cte.ExprDta)
+    cte.dta <- cte.dta[cte.pma.Idx,] 
 
-# robust Micro Array Avg w/ Quantile Normalization and log scaling. 
-cte.ExprDta <-rma(pcraw.cte)
-cte.dta<-exprs(cte.ExprDta)
-cte.dta <- cte.dta[cte.pma.Idx,] 
+    #Save data
+    fn = file.path(cleandata.dir,paste("cte_threshold",round(THRESHOLD*100),".txt",sep = ""))
+    write.table(cte.dta, file = fn, sep = "\t", row.names = TRUE,col.names =TRUE)
+    message(paste("Call Threshold: ",round(THRESHOLD*100) ," Number of genes: ",length(cte.pma.Idx), "\n"))
+    
+    return (cte.dta)
+}
 
-#Save data
-#write.table(cte.dta, file = file.path(cleandata.dir,"cte.txt"), sep = "\t", row.names = TRUE,col.names =TRUE)
-cat(paste("Number of genes: ",length(cte.pma.Idx), "\n"))
+# output cte data precense call threshold 40%
+cte_threshold40.dta = get.ctedata()
 
+# output cte data precense call threshold 45%
+cte_threshold45.dta = get.ctedata(.45)
+
+# output cte data precense call threshold 50%
+cte_threshold50.dta = get.ctedata(.50)
+
+# output cte data precense call threshold 55%
+cte_threshold55.dta = get.ctedata(.55)
 
 
 
 #Print out the portion of data make sure don't have `NA problem`
-head(cte.dta)
+head(cte_threshold40.dta)
+head(cte_threshold45.dta)
+head(cte_threshold50.dta)
+head(cte_threshold55.dta)
 
-print(paste("Num of sig genes for CTE",length(cte.pma.Idx)))
+
+print(paste("Num of sig genes for CTE",nrow(cte_threshold40.dta)))
 print(paste("Num of sig genes for AH",length(ah.pma.Idx)))
 
 #source("https://bioconductor.org/biocLite.R")
@@ -253,13 +270,26 @@ filter.genes<-function(F = rownames(alzheimer.dta), data =  alzheimer.dta, colNa
     }
 }
 
+# Output data for 40% cutoff for AH
 nonSig.ah = filter.genes()
-nonSig.cte = filter.genes(rownames(cte.dta), cte.dta, cte.colnamesList)
-
-cat(paste("Num of sig genes CTE: ", dim(cte.dta)[1]- length(nonSig.cte),"\n"))
 cat(paste("Num of sig genes AH: ", dim(alzheimer.dta)[1]- length(nonSig.ah),"\n"))
+write.table(alzheimer.dta[-which(rownames(alzheimer.dta) %in% nonSig.ah),], file = file.path(cleandata.dir,"alzheimerFILTER.txt"), sep = "\t", row.names = TRUE,col.names =TRUE)
 
-#write to table and exclude genes that are not significant
-#write.table(alzheimer.dta[-which(rownames(alzheimer.dta) %in% nonSig.ah),], file = file.path(cleandata.dir,"alzheimerFILTER.txt"), sep = "\t", row.names = TRUE,col.names =TRUE)
-#write.table(cte.dta[-which(rownames(cte.dta) %in% nonSig.cte),], file = file.path(cleandata.dir,"cteFILTER.txt"), sep = "\t", row.names = TRUE,col.names =TRUE)
+
+
+
+# function to write cte data to file
+filter.cte<-function(cte.dta, threshold, cte.colnamesList){
+    nonSig.cte = filter.genes(rownames(cte.dta), cte.dta, cte.colnamesList)
+    num_non_sig = dim(cte.dta)[1]- length(nonSig.cte)
+    message(paste("Call Threshold: ",round(threshold*100) ," Number of sig genes CTE:",num_non_sig, "\n", sep = ""))
+    fn = file.path(cleandata.dir,paste("cte_threshold",round(threshold*100),"FILTER",".txt",sep = ""))
+    write.table(cte.dta[-which(rownames(cte.dta) %in% nonSig.cte),], file = fn, sep = "\t", row.names = TRUE,col.names =TRUE)
+}
+
+# Output data for different cutoffs for CTE
+filter.cte(cte_threshold40.dta,.4, cte.colnamesList)
+filter.cte(cte_threshold45.dta,.45,cte.colnamesList )
+filter.cte(cte_threshold50.dta,.5,cte.colnamesList )
+filter.cte(cte_threshold55.dta,.55,cte.colnamesList )
 
